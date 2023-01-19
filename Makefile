@@ -289,14 +289,14 @@ MAKEFLAGS += -rR
 # Make variables (CC, etc...)
 
 AS		= $(CROSS_COMPILE)as
-CC		= $(CROSS_COMPILE)gcc
+CC		= $(CROSS_COMPILE)clang
 LD		= $(CC) -nostdlib
 CPP		= $(CC) -E
-AR		= $(CROSS_COMPILE)ar
-NM		= $(CROSS_COMPILE)nm
-STRIP		= $(CROSS_COMPILE)strip
-OBJCOPY		= $(CROSS_COMPILE)objcopy
-OBJDUMP		= $(CROSS_COMPILE)objdump
+AR		= llvm-ar
+NM		= llvm-nm
+STRIP		= llvm-strip
+OBJCOPY		= llvm-objcopy
+OBJDUMP		= llvm-objdump
 PKG_CONFIG	?= $(CROSS_COMPILE)pkg-config
 AWK		= awk
 GENKSYMS	= scripts/genksyms/genksyms
