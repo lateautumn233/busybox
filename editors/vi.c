@@ -4951,6 +4951,7 @@ enum {
 	OPT_R = IF_FEATURE_VI_READONLY(	(1 << OPTBIT_R)) + 0,
 };
 
+#pragma clang optimize off
 int vi_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int vi_main(int argc, char **argv)
 {

@@ -14640,6 +14640,7 @@ extern int etext();
  * exception occurs.  When an exception occurs the variable "state"
  * is used to figure out how far we had gotten.
  */
+#pragma clang optimize off
 int ash_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 #if NUM_SCRIPTS > 0
 int ash_main(int argc, char **argv)

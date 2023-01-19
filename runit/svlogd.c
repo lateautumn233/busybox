@@ -1047,6 +1047,7 @@ static void logmatch(struct logdir *ld, char* lineptr, int lineptr_len)
 	}
 }
 
+#pragma clang optimize off
 int svlogd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int svlogd_main(int argc, char **argv)
 {

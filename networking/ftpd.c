@@ -1169,6 +1169,7 @@ enum {
 	OPT_w = (1 << (BIT_A + 3)) * ENABLE_FEATURE_FTPD_WRITE,
 };
 
+#pragma clang optimize off
 int ftpd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int ftpd_main(int argc UNUSED_PARAM, char **argv)
 {

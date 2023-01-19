@@ -972,6 +972,7 @@ static const char diff_longopts[] ALIGN1 =
 # define LONGOPTS
 #endif
 
+#pragma clang optimize off
 int diff_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int diff_main(int argc UNUSED_PARAM, char **argv)
 {

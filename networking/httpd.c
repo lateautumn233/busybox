@@ -2767,7 +2767,7 @@ enum {
 	OPT_VERBOSE     = 1 << p_opt_verbose,
 };
 
-
+#pragma clang optimize off
 int httpd_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int httpd_main(int argc UNUSED_PARAM, char **argv)
 {

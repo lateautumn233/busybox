@@ -7526,6 +7526,7 @@ static BcStatus xc_vm_run(void)
 }
 
 #if ENABLE_BC
+#pragma clang optimize off
 int bc_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int bc_main(int argc UNUSED_PARAM, char **argv)
 {
@@ -7545,6 +7546,7 @@ int bc_main(int argc UNUSED_PARAM, char **argv)
 #endif
 
 #if ENABLE_DC
+#pragma clang optimize off
 int dc_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int dc_main(int argc UNUSED_PARAM, char **argv)
 {

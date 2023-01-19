@@ -1490,6 +1490,7 @@ However, in real world it was observed that some web servers
 	free(redirected_path);
 }
 
+#pragma clang optimize off
 int wget_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int wget_main(int argc UNUSED_PARAM, char **argv)
 {

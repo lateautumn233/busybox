@@ -1000,6 +1000,7 @@ static void doCommands(void)
 	}
 }
 
+#pragma clang optimize off
 int ed_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int ed_main(int argc UNUSED_PARAM, char **argv)
 {

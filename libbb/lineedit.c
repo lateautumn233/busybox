@@ -2454,6 +2454,7 @@ static void sigaction2(int sig, struct sigaction *act)
  * (in both cases the cursor remains on the input line, '\n' is not printed)
  * >0 length of input string, including terminating '\n'
  */
+#pragma clang optimize off
 int FAST_FUNC read_line_input(line_input_t *st, const char *prompt, char *command, int maxsize)
 {
 	int len, n;

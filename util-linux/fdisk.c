@@ -3022,6 +3022,7 @@ unknown_command(int c)
 }
 #endif
 
+#pragma clang optimize off
 int fdisk_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int fdisk_main(int argc UNUSED_PARAM, char **argv)
 {
